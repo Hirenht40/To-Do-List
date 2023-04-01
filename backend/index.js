@@ -21,9 +21,9 @@ app.use('/api', allRoutes);
 // error handler
 // eslint-disable-next-line
 app.use((err, req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-
-  res.setHeader('Referrer-Policy', 'no-referrer-when-downgrade');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   const status = err.statusCode || 500;
   const message = err.message || 'Internal Server Error';
   return res.status(status).json({ message, stack: err.stack });
