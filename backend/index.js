@@ -21,6 +21,7 @@ app.use('/api', allRoutes);
 // error handler
 // eslint-disable-next-line
 app.use((err, req, res, next) => {
+  res.setHeader('Referrer-Policy', 'no-referrer-when-downgrade');
   const status = err.statusCode || 500;
   const message = err.message || 'Internal Server Error';
   return res.status(status).json({ message, stack: err.stack });
