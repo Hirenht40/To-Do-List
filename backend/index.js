@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 8000;
 // app.use(cors());
 const corsOptions = {
   AccessControlAllowOrigin: '*',
-  origin: 'https://majestic-bunny-74483e.netlify.app',
+  origin: 'https://to-do-list-front2.onrender.com/',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 };
 app.use(cors(corsOptions));
