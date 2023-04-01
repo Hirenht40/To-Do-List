@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
     server: {
       proxy: {
         '/api': {
-          target: env.VITE_SERVER,
+          target: 'https://to-do-list-7k2u.onrender.com',
         },
       },
     },
