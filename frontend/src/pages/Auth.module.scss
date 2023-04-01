@@ -1,0 +1,28 @@
+.form_container {
+	margin-top: 10rem;
+
+	display: flex;
+	flex-direction: column; /* set flex direction to column on smaller screens */
+	align-items: center; /* center the items horizontally */
+	gap: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+		rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.sign {
+	margin-top: -1rem; /* add some margin to the top to push it below the form */
+	height: 3rem;
+	width: 80px;
+	border: 2px solid rgb(138, 87, 87);
+	border-radius: 100px;
+	background: rgb(0, 0, 0);
+	color: azure;
+	font-size: 18px;
+	transition: 0.5s;
+	margin-bottom: 2rem;
+}
+
+.sign:hover {
+	background: rgb(255, 253, 253);
+	color: rgb(0, 0, 0);
+}
